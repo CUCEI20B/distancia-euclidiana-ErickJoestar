@@ -1,3 +1,6 @@
+import math
+
+
 def distancia_euclidiana(x_1, y_1, x_2, y_2):
     """ Calcula la distancia euclidiana
 
@@ -13,4 +16,4 @@ def distancia_euclidiana(x_1, y_1, x_2, y_2):
     y_2 -- destino_y
 
     """
-    
+    return math.sqrt((x_1 - x_2)**2 + (y_1 - y_2) ** 2)
