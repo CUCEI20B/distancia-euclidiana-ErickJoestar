@@ -3,19 +3,14 @@ from particula import Particula
 
 class Admin:
     def __init__(self):
-        self.inicio = {}
+        self.__particulas = []
 
-    def agregar_inicio(pt):
-        self.inicio = {siguiente = self.inicio, particula = pt}
+    def agregar_inicio(pt: Particula):
+        self.particulas.append(pt)
 
-    def agregar_final(pt):
-        ptr = self.inicio
-        while(!(ptr.siguiente is None)):
-            ptr = self.siguiente
-        ptr.siguiente = {patrticula: pt}
+    def agregar_final(pt: Particula):
+        self.particulas.append(pt)
 
     def mostrar():
-        ptr = self.inicio
-        while(!(ptr is None)):
-            ptr.particula.print()
-            ptr = ptr.siguiente
+        for particula in self.__particulas:
+            print(particula)
